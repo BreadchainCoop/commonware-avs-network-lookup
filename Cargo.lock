@@ -2270,6 +2270,7 @@ dependencies = [
  "eigen-utils",
  "eyre",
  "rand 0.9.1",
+ "serde",
  "serde_json",
  "tokio",
  "tokio-rustls 0.24.1",
