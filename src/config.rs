@@ -13,6 +13,8 @@ pub struct ContractAddresses {
     pub registry_coordinator: String,
     #[serde(rename = "blsapkRegistry")]
     pub bls_apk_registry: String,
+    #[serde(rename = "operatorStateRetriever")]
+    pub operator_state_retriever: String,
     pub counter: String,
 }
 
@@ -32,6 +34,10 @@ impl AvsDeployment {
 
     pub fn bls_apk_registry_address(&self) -> Result<Address, Box<dyn std::error::Error + Send + Sync>> {
         Ok(Address::from_str(&self.addresses.bls_apk_registry)?)
+    }
+
+    pub fn operator_state_retriever_address(&self) -> Result<Address, Box<dyn std::error::Error + Send + Sync>> {
+        Ok(Address::from_str(&self.addresses.operator_state_retriever)?)
     }
 
     pub fn counter_address(&self) -> Result<Address, Box<dyn std::error::Error + Send + Sync>> {
