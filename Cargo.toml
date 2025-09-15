@@ -7,7 +7,6 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 eigen-services-blsaggregation = "2.0.0"
 eigen-client-avsregistry = "2.0.0"
-eigen-logging = "1.0.0"
 eigen-services-avsregistry = "2.0.0"
 eigen-services-operatorsinfo = "2.0.0"
 eigen-crypto-bls = "2.0.0"
